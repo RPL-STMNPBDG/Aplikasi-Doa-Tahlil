@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/card_view"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_r"
+    android:paddingTop="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="454dp"
+            android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rvTop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#fff5f5f5">
+
+                                        <LinearLayout
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/bg_circle"
+                                            android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/tvNomorAyat"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="1"
+                                                    android:textColor="@android:color/white"
+                                                    android:textSize="16sp"
+                                                    android:textStyle="bold" />
+
+                                        </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/rvTop"
+                                    android:layout_marginTop="10dp">
+
+                                        <TextView
+                                            android:id="@+id/tvArabic"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_margin="5dp"
+                                            android:text="بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ"
+                                            android:textColor="@android:color/black"
+                                            android:textIsSelectable="true"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tvTerjemahan"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/tvArabic"
+                                            android:layout_margin="5dp"
+                                            android:text="Dengan nama Allah Yang Maha Pengasih, Maha Penyayang."
+                                            android:textIsSelectable="true"
+                                            android:textSize="12sp"
+                                            android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                        </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:id="@+id/rvTopb"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#fff5f5f5">
+
+                                                <LinearLayout
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    android:layout_margin="5dp"
+                                                    android:background="@drawable/bg_circle"
+                                                    android:gravity="center">
+
+                                                        <TextView
+                                                            android:id="@+id/tvNomorAyatb"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="2"
+                                                            android:textColor="@android:color/white"
+                                                            android:textSize="16sp"
+                                                            android:textStyle="bold" />
+
+                                                </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/rvTopb"
+                                            android:layout_marginTop="10dp">
+
+                                                <TextView
+                                                    android:id="@+id/tvArabicb"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_margin="5dp"
+                                                    android:text="اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ"
+                                                    android:textColor="@android:color/black"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="20sp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTerjemahanb"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/tvArabicb"
+                                                    android:layout_margin="5dp"
+                                                    android:text="Segala puji bagi Allah, Tuhan seluruh alam,"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+                                        </RelativeLayout>
+
+                                </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:id="@+id/rvTopc"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#fff5f5f5">
+
+                                                <LinearLayout
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    android:layout_margin="5dp"
+                                                    android:background="@drawable/bg_circle"
+                                                    android:gravity="center">
+
+                                                        <TextView
+                                                            android:id="@+id/tvNomorAyatc"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="3"
+                                                            android:textColor="@android:color/white"
+                                                            android:textSize="16sp"
+                                                            android:textStyle="bold" />
+
+                                                </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/rvTopc"
+                                            android:layout_marginTop="10dp">
+
+                                                <TextView
+                                                    android:id="@+id/tvArabicc"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_margin="5dp"
+                                                    android:text="الرَّحْمٰنِ الرَّحِيْمَِۙۙ"
+                                                    android:textColor="@android:color/black"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="20sp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTerjemahanc"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/tvArabicc"
+                                                    android:layout_margin="5dp"
+                                                    android:text="Yang Maha Pengasih, Maha Penyayang,"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+                                        </RelativeLayout>
+
+                                </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:id="@+id/rvTopd"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#fff5f5f5">
+
+                                                <LinearLayout
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    android:layout_margin="5dp"
+                                                    android:background="@drawable/bg_circle"
+                                                    android:gravity="center">
+
+                                                        <TextView
+                                                            android:id="@+id/tvNomorAyatd"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="4"
+                                                            android:textColor="@android:color/white"
+                                                            android:textSize="16sp"
+                                                            android:textStyle="bold" />
+
+                                                </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/rvTopd"
+                                            android:layout_marginTop="10dp">
+
+                                                <TextView
+                                                    android:id="@+id/tvArabicd"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_margin="5dp"
+                                                    android:text="مٰلِكِ يَوْمِ الدِّيْنَِِۗۙۙ"
+                                                    android:textColor="@android:color/black"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="20sp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTerjemahand"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/tvArabicd"
+                                                    android:layout_margin="5dp"
+                                                    android:text="Pemilik hari pembalasan."
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+                                        </RelativeLayout>
+
+                                </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:id="@+id/rvTope"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#fff5f5f5">
+
+                                                <LinearLayout
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    android:layout_margin="5dp"
+                                                    android:background="@drawable/bg_circle"
+                                                    android:gravity="center">
+
+                                                        <TextView
+                                                            android:id="@+id/tvNomorAyate"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="5"
+                                                            android:textColor="@android:color/white"
+                                                            android:textSize="16sp"
+                                                            android:textStyle="bold" />
+
+                                                </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/rvTope"
+                                            android:layout_marginTop="10dp">
+
+                                                <TextView
+                                                    android:id="@+id/tvArabice"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_margin="5dp"
+                                                    android:text="اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُۗ"
+                                                    android:textColor="@android:color/black"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="20sp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTerjemahane"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/tvArabice"
+                                                    android:layout_margin="5dp"
+                                                    android:text="Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan."
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+                                        </RelativeLayout>
+
+                                </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:id="@+id/rvTopf"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#fff5f5f5">
+
+                                                <LinearLayout
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    android:layout_margin="5dp"
+                                                    android:background="@drawable/bg_circle"
+                                                    android:gravity="center">
+
+                                                        <TextView
+                                                            android:id="@+id/tvNomorAyatf"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="6"
+                                                            android:textColor="@android:color/white"
+                                                            android:textSize="16sp"
+                                                            android:textStyle="bold" />
+
+                                                </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/rvTopf"
+                                            android:layout_marginTop="10dp">
+
+                                                <TextView
+                                                    android:id="@+id/tvArabicf"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_margin="5dp"
+                                                    android:text="اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ ُۙۗ"
+                                                    android:textColor="@android:color/black"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="20sp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTerjemahanf"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/tvArabicf"
+                                                    android:layout_margin="5dp"
+                                                    android:text="Tunjukilah kami jalan yang lurus,"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+                                        </RelativeLayout>
+
+                                </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:id="@+id/rvTopg"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#fff5f5f5">
+
+                                                <LinearLayout
+                                                    android:layout_width="25dp"
+                                                    android:layout_height="25dp"
+                                                    android:layout_margin="5dp"
+                                                    android:background="@drawable/bg_circle"
+                                                    android:gravity="center">
+
+                                                        <TextView
+                                                            android:id="@+id/tvNomorAyatg"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="7"
+                                                            android:textColor="@android:color/white"
+                                                            android:textSize="16sp"
+                                                            android:textStyle="bold" />
+
+                                                </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/rvTopg"
+                                            android:layout_marginTop="10dp">
+
+                                                <TextView
+                                                    android:id="@+id/tvArabicg"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_margin="5dp"
+                                                    android:text="صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَالضَّاۤلِّيْنَ ࣖ"
+                                                    android:textColor="@android:color/black"
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="20sp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTerjemahang"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/tvArabicg"
+                                                    android:layout_margin="5dp"
+                                                    android:text=" (yaitu) jalan orang-orang yang telah Engkau beri nikmat kepadanya; bukan (jalan) mereka yang dimurkai, dan bukan (pula jalan) mereka yang sesat."
+                                                    android:textIsSelectable="true"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+                                        </RelativeLayout>
+
+                                </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
+        </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

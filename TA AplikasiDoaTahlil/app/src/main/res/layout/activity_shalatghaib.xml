@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#5065A5"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_gravity="end"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sghaib"
+                app:riv_corner_radius_bottom_left="40dp"
+                app:riv_corner_radius_bottom_right="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/bg_rounded_all"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Niat Shalat Ghaib"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="366dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Shalat jenazah yang dilakukan seseorang atau sekelompok orang tanpa kehadiran si mayit karena berada di lokasi yang jauh atau sudah dimakamkan."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frameHeader"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_rd"
+            android:paddingTop="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardsatu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rvTop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff5f5f5">
+
+                                <RelativeLayout
+                                    android:id="@+id/relativerow"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_id">
+
+                                    <TextView
+                                        android:id="@+id/noId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="1"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_toEndOf="@id/relativerow"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/judulDoa"
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Niat sholat ghaib untuk jenazah laki-laki"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageButton
+                                        android:id="@+id/imagesatu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/isisatu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rvTop"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/atas"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    >
+                                    <ImageButton
+                                        android:id="@+id/ssatu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_stop_circle_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/plsatu"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_play_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/psatu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_pause_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#000000"
+                                    android:layout_below="@id/atas"
+                                    android:layout_marginBottom="15dp"/>
+                                <TextView
+                                    android:layout_below="@id/atas"
+                                    android:id="@+id/tvArabic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="أُصَلِّي عَلَى مَيِّتِ (فُلَانِ) الْغَائِبِ أَرْبَعَ تَكْبِيرَاتٍ فَرْضَ الْكِفَايَةِ إِمَامًا/مَأْمُومًا لِلّٰهِ تَعَالَى "
+                                    android:textColor="@android:color/black"
+                                    android:textIsSelectable="true"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTerjemahan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvArabic"
+                                    android:layout_margin="5dp"
+                                    android:text="Saya menyalati jenazah (sebutkan namanya) yang berada di tempat lain empat takbir dengan hukum fardhu kifâyah sebagai imam/makmum karena Allah ta’âlâ."
+                                    android:textIsSelectable="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/carddua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rvTopb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff5f5f5">
+
+                                <RelativeLayout
+                                    android:id="@+id/relativerowb"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_id">
+
+                                    <TextView
+                                        android:id="@+id/noIdb"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="2"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_toEndOf="@id/relativerowb"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/judulDoab"
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Niat sholat ghaib untuk jenazah perempuan"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageButton
+                                        android:id="@+id/imagedua"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/isidua"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rvTopb"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/atasd"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    >
+                                    <ImageButton
+                                        android:id="@+id/sdua"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_stop_circle_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/pldua"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_play_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/pdua"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_pause_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#000000"
+                                    android:layout_below="@id/atasd"
+                                    android:layout_marginBottom="15dp"/>
+
+                                <TextView
+                                    android:layout_below="@+id/atasd"
+                                    android:id="@+id/tvArabicb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:text="أُصَلِّي عَلَى مَيِّتَةِ (فُلَانَةٍ) الْغَائِبَةِ أَرْبَعَ تَكْبِيرَاتٍ  فَرْضَ الْكِفَايَةِ إِمَامًا/مَأْمُومًا لِلّٰهِ تَعَالَى   "
+                                    android:textColor="@android:color/black"
+                                    android:textIsSelectable="true"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTerjemahanb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvArabicb"
+                                    android:layout_margin="5dp"
+                                    android:text="Saya menyalati jenazah (sebutkan namanya) yang berada di tempat lain empat takbir dengan hukum fardhu kifâyah sebagai imam/makmum karena Allah ta’âlâ."
+                                    android:textIsSelectable="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardtiga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rvTopc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff5f5f5">
+
+                                <RelativeLayout
+                                    android:id="@+id/relativerowc"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_id">
+
+                                    <TextView
+                                        android:id="@+id/noIdc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="3"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_toEndOf="@id/relativerowc"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/judulDoac"
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Niat sholat ghaib bila jenazahnya dua laki-laki atau dua perempuan"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageButton
+                                        android:id="@+id/imagetiga"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/isitiga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rvTopc"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone">
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/atast"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    >
+                                    <ImageButton
+                                        android:id="@+id/stiga"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_stop_circle_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/pltiga"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_play_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/ptiga"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_pause_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#000000"
+                                    android:layout_below="@id/atast"
+                                    android:layout_marginBottom="15dp"/>
+                                <TextView
+                                    android:layout_below="@+id/atast"
+                                    android:id="@+id/tvArabicc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:text="أُصَلِّي عَلَى مَيِّتَيْنِ/مَيِّتَتَيْنِ (فُلَانٍ وَفُلَانٍ-فُلَانٍ وَفُلَانَةٍ/فُلَانَةٍ وَفُلَانَةٍ) الْغَائِبَيْنِ/الْغَائِبَتَيْنِ أَرْبَعَ تَكْبِيرَاتٍ فَرْضَ الْكِفَايَةِ إِمَامَا/مَأْمُومًا لِلّٰهِ تَعَالَى   "
+                                    android:textColor="@android:color/black"
+                                    android:textIsSelectable="true"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTerjemahanc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvArabicc"
+                                    android:layout_margin="5dp"
+                                    android:text="Saya menyalati dua jenazah (Si Fulan dan Si Fulan/Si Fulan dan Si Fulanah/Si Fulanah dan Si Fulanah sebutkan namanya) yang berada di tempat lain empat takbir dengan hukum fardhu kifâyah sebagai imam/makmum karena Allah ta’âlâ."
+                                    android:textIsSelectable="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardempat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rvTopd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff5f5f5">
+
+                                <RelativeLayout
+                                    android:id="@+id/relativerowd"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_id">
+
+                                    <TextView
+                                        android:id="@+id/noIdd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="4"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_toEndOf="@id/relativerowd"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/judulDoad"
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Niat sholat ghaib apabila jenazahnya banyak"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageButton
+                                        android:id="@+id/imageempat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/isiempat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rvTopd"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/atase"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    >
+                                    <ImageButton
+                                        android:id="@+id/sempat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_stop_circle_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/plempat"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_play_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/pempat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_pause_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#000000"
+                                    android:layout_below="@id/atase"
+                                    android:layout_marginBottom="15dp"/>
+
+                                <TextView
+                                    android:layout_below="@+id/atase"
+                                    android:id="@+id/tvArabicd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:text="أُصَلِّي عَلَى جَمِيعِ مَوْتَى قَرْيَةِ كَذَا الْغَائِبِينَ الْمُسْلِمِينَ أَرْبَعَ تَكْبِيرَاتٍ فَرْضَ الْكِفَايَةِ إِمَامَا/مَأْمُومًا لِلّٰهِ تَعَالَى   "
+                                    android:textColor="@android:color/black"
+                                    android:textIsSelectable="true"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTerjemahand"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvArabicd"
+                                    android:layout_margin="5dp"
+                                    android:text="Saya menyalati seluruh umat muslim yang jadi korban  di desa ‘...’ (sebutkan nama desanya) yang berada di tempat lain empat takbir dengan hukum fardhu kifâyah sebagai imam/makmum karena Allah ta’âlâ."
+                                    android:textIsSelectable="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardlima"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rvTope"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff5f5f5">
+
+                                <RelativeLayout
+                                    android:id="@+id/relativerowe"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_id">
+
+                                    <TextView
+                                        android:id="@+id/noIde"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="5"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_toEndOf="@id/relativerowe"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/judulDoae"
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Niat sholat ghaib tanpa diketahui namanya"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageButton
+                                        android:id="@+id/imagelima"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/isilima"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rvTope"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/atasl"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    >
+                                    <ImageButton
+                                        android:id="@+id/slima"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_stop_circle_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/pllima"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_play_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+                                    <ImageButton
+                                        android:id="@+id/plima"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_baseline_pause_circle_filled_24"
+                                        android:background="@android:color/transparent"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#000000"
+                                    android:layout_below="@id/atasl"
+                                    android:layout_marginBottom="15dp"/>
+
+                                <TextView
+                                    android:layout_below="@+id/atasl"
+                                    android:id="@+id/tvArabice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:text="اُصَلِّى عَلَى مَنْ صَلَّى عَلَيْهِ اْلِامَامُ مَأْمُوْمًا فَرْضَ  ِللهِ تَعَالَى"
+                                    android:textColor="@android:color/black"
+                                    android:textIsSelectable="true"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTerjemahane"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvArabice"
+                                    android:layout_margin="5dp"
+                                    android:text="Aku niat shalat atas jenazah yang dishalati imam fardlu karena Allah ta’âlâ."
+                                    android:textIsSelectable="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </ScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

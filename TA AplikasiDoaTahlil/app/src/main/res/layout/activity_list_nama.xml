@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListNama"
+    android:background="#5065A5">
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/filled_text_input_layout"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="375dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:hint="FilledBox"-->
+<!--        android:textColorHint="@color/purple"-->
+<!--        android:theme="@style/EditTextThemeOverlay"-->
+<!--        app:boxBackgroundColor="@color/purpleAlpha15"-->
+<!--        app:errorTextAppearance="@style/ErrorTextAppearance"-->
+<!--        app:helperText="FilledBox helper"-->
+<!--        app:helperTextTextAppearance="@style/HelperTextAppearance">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/filled_edit_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="-10dp"-->
+<!--            android:paddingStart="20dp"-->
+<!--            android:paddingTop="20dp"-->
+<!--            android:paddingEnd="20dp"-->
+<!--            android:textColorHighlight="@color/textColorHighlight"-->
+<!--            app:backgroundTint="@color/purple" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/inputTextTask"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="15dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextTask"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:singleLine="true"-->
+<!--            android:maxLength="20"-->
+<!--            android:textSize="11dp"-->
+<!--            android:hint="Kegiatan" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:layout_margin="15dp"
+        android:padding="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        android:textColor="@color/black"
+        android:hint="Masukkan nama almarhum/ almarhumah"
+        android:textColorHint="@color/black"
+        android:textSize="16dp"
+        android:background="@drawable/bg_edittext"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="15dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="ADD"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/bg_button"
+            style="?android:attr/buttonBarStyle"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdate"
+            android:text="UPDATE"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bg_button"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnDelete"
+            android:text="DELETE"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bg_button"
+            style="?android:attr/buttonBarStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rd"
+        android:paddingTop="20dp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvEmployees"
+        android:divider="@color/black"
+        android:dividerHeight="1dp"
+        android:listSelector="#D9D9D9"
+        android:choiceMode="singleChoice"/>
+    </LinearLayout>
+
+</LinearLayout>
